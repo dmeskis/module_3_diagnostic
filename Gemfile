@@ -11,10 +11,18 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faraday'
 gem 'figaro'
+gem 'bcrypt'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'launchy'
+  gem 'faker'
+  gem 'capybara-email'
+  gem 'pry'
+  gem 'shoulda-matchers'
 end
 
 group :development do
@@ -27,4 +35,3 @@ group :test do
   gem 'webmock'
   gem 'capybara'
 end
-
