@@ -3,7 +3,7 @@ require 'rails_helper'
 feature "User can find stations by zip code" do
   scenario "user searches zip code and a list of stations within 6 miles appears" do
     visit "/"
-    fill_in "q", with: 80203
+    fill_in "zip", with: 80203
     click_on "Locate"
     expect(current_path).to eq("/search")
 
