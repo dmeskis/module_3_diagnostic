@@ -14,7 +14,7 @@ feature "User can find stations by zip code" do
       expect(page).to have_css(".address")
       expect(page).to have_css(".access-times")
     end
-    save_and_open_page
+    expect(page).to have_css('.station', count: 10)
   end
 end
 
