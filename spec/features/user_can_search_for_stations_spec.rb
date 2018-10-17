@@ -12,9 +12,9 @@ feature "User can find stations by zip code" do
       expect(page).to have_css(".type")
       expect(page).to have_css(".name")
       expect(page).to have_css(".address")
-      expect(page).to have_css(".fuel-type")
       expect(page).to have_css(".access-times")
     end
+    save_and_open_page
   end
 end
 
